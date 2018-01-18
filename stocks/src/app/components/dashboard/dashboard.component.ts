@@ -11,13 +11,10 @@ export class DashboardComponent implements OnInit {
   symbols: Array<string>;
 
   constructor(private service: StocksService) { 
-    console.log('Dashboard component constructor');
     this.symbols = service.get();
   }
 
   ngOnInit() {
-    console.log('Dashboard component onInit');
-
     this.service.load(this.symbols)
       .subscribe(s => this.stocks = s);
   }
