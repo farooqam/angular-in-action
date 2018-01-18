@@ -6,9 +6,9 @@ let service: string = 'http://angular2-in-action-api.herokuapp.com';
 
 export interface IStock {
   symbol: string,
-  lastTradePrice: number,
+  lastTradePriceOnly: number,
   change: number,
-  percentChange: number
+  changeInPercent: number
 }
 
 @Injectable()
