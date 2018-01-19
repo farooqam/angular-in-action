@@ -5,16 +5,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { StocksService } from './services/stocks/stocks.service';
 import { SummaryComponent } from './components/summary/summary.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ManageComponent } from './components/manage/manage.component';
+import { FormsModule } from '@angular/forms';
+import { AppRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     SummaryComponent,
-    DashboardComponent
+    DashboardComponent,
+    ManageComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    AppRoutes
   ],
   providers: [StocksService],
   bootstrap: [AppComponent]
