@@ -3,11 +3,11 @@
     <div class="branding">
       <a>
         <clr-icon shape="group"></clr-icon>
-        <span class="title">Community</span>
+        <span class="title" routerLink="login">Community</span>
       </a>
     </div>
     <div class="header-nav">
-        <a class="nav-link"><span class="nav-text">Forums</span></a>
+        <a class="nav-link"><span class="nav-text" routerLink="forums">Forums</span></a>
         <a class="nav-link"><span class="nav-text">Blogs</span></a>
     </div>
     <div class="header-actions">
@@ -21,7 +21,7 @@
   </header>
   <div class="content-container">
     <div class="content-area">
-      <h1>Content here</h1>
+      <router-outlet></router-outlet>>
     </div>
   </div>
 </clr-main-container>
