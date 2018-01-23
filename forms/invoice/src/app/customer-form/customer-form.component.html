@@ -4,13 +4,13 @@
       <md-card-header>Edit Customer</md-card-header>
       <md-card-content>
         <md-input-container>
-          <input name="customer" mdInput placeholder="Customer Name" value="">
+          <input name="customer" mdInput placeholder="Customer Name" [(ngModel)]="customer.name" required>
         </md-input-container>
         <md-input-container>
-          <input name="email" mdInput type="email" placeholder="Email" value="">
+          <input name="email" mdInput type="email" placeholder="Email"[(ngModel)]="customer.email">
         </md-input-container>
         <md-input-container>
-          <input name="phone" mdInput type="tel" placeholder="Phone" value="">
+          <input name="phone" mdInput type="tel" placeholder="Phone" [(ngModel)]="customer.phone">
         </md-input-container>
       </md-card-content>
       <md-card-actions>
