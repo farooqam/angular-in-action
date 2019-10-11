@@ -1,0 +1,5 @@
+<p>Price quote received:
+  {{quote?.stockSymbol}}
+  {{quote?.lastPrice | currency: 'USD'}}
+</p>
+<app-price-quoter (latestQuote)="handleLatestQuote($event)"></app-price-quoter>
