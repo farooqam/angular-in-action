@@ -1,0 +1,19 @@
+<app-operation 
+  [label]="'First'" 
+  [placeholder]="'Enter a number'"
+  (valueChanged)="handleFirstValueChanged($event)">
+</app-operation>
+
+<app-operation 
+  [label]="'Second'" 
+  [placeholder]="'Enter a number'"
+  (valueChanged)="handleSecondValueChanged($event)">
+</app-operation>
+
+<app-add
+  [firstValue]="firstValue"
+  [secondValue]="secondValue"
+  (buttonClicked)="handleButtonClicked($event)">
+</app-add>
+
+<app-result [label]="'The result is:'" [result]="result"></app-result>
