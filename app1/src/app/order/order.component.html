@@ -1,0 +1,9 @@
+<input type="text" 
+  placeholder="Enter stock symbol (e.g. MSFT)" 
+  (change)="onStockSymbolChanged($event)">
+
+<input type="number" 
+  placeholder="Enter number of shares" 
+  (change)="onQuantityChanged($event)">
+
+<app-order-processor [stockSymbol]="stockSymbol" [quantity]="quantity"></app-order-processor>
